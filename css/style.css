@@ -1,0 +1,31 @@
+/* Les styles du répo des cours et des exos JS - Alexandre Colombbus */
+
+body {
+    background-color: purple;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#wrapper {
+    background-color: seashell;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: url(../img/gaming-pattern.png);
+}
+
+h1 {
+    border-radius: 10px;
+    background-color: seashell;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    background-image: url(../img/gaming-pattern.png);
+}
+
+/* Pour surligner le texte en jaune  */
+.stabilo {
+    background-color: yellow;
+}
+
+/* Les titres  */

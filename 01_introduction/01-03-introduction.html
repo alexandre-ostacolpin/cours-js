@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - I 03 introduction</title>
+    <!-- Mes style  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- script Js dans l'en-tête  -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            let bonjour = document.getElementById('b1');
+            bonjour.addEventListener('click', coucou);
+
+            function coucou(){
+                alert('coucou, c\'est encore moi');// le caractère d'échappement pour avoir dans la chaîne de caractère l'apostrophe
+            }
+        });
+    </script>
+    
+</head>
+<body>
+    <div id="wrapper">
+        <h1>JS - I 03 introduction</h1>
+        <button id="b1">Cliquez sur moi</button>
+        <button id="b2">Ajoutez un paragraphe</button>
+        <p>on va pouvoir placer notre élément script n'importe ou dans notre page HTML, aussi bien dasn l'élément <code>head</code> qu'au sein de l'élément <code>body</code>. On place également plusieurs bouts de code JS à différents endroits de la page</p>
+        <script>
+            let ajouter = document.getElementById('b2');
+            ajouter.addEventListener('click', ajout);
+
+            function ajout(){
+                let para = document.createElement('p');
+                para.textContent = 'Ma grand-mère fait du vélo';
+                document.body.appendChild(para);
+            }
+        </script>
+    </div>
+</body>
+</html>
