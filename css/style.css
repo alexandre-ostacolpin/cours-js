@@ -28,4 +28,19 @@ h1 {
     background-color: yellow;
 }
 
+/* tableau */
+table {
+    width: 500px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, tr, td {
+    border: 3px solid lightblue;
+}
+
+thead {
+    background-color: rgb(82, 190, 236);
+}
+
 /* Les titres  */
