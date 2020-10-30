@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 Entrainement</title>
+    <!-- styles pour cette page  -->
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+    <!-- script dans l'en-tête  -->
+    <script>
+        document.write('<h1>01 Entrainement JS</h1>');
+
+        document.write('<h2 style="background: orange;width: 75%;color: #fff;">1- Affichage</h2>');
+
+        var maBoite;
+        maBoite = 10;
+
+        let monAge = 12;
+
+        document.write('<p>dans la variable maBoite il y a ' + maBoite + '</p>');
+
+        console.log(maBoite);
+        console.log(monAge);
+
+        console.log('Un message dans le log.');
+        console.log('Une information à envoyer dans la console.');
+
+        //boite alert();
+        //alert('Alerte ! Ceci est un message d\'alerte');
+
+        //boite confirm();
+        //confirm('Confirmez-vous ? ');
+
+        //boite prompt()
+        //prompt('comment ça va ? ');
+
+        // var sonChien = prompt('Quel est le prénom de votre chien ? ');
+
+        // document.write('<p>Votre chien s\'apelle ' + sonChien + '.</p>');
+
+        // let humeur = prompt('comment va ?');
+
+        // document.write('<p>Alors ? ça va ? ' + humeur + '</p>');
+
+        //Portée locale ou globale de la variable !!!
+
+        // if(true){
+        //     let nombre = 9;
+        // }
+
+        // console.log(nombre);
+
+        let nombre2;
+        if(true){
+            nombre2 = 18;
+        } 
+        console.log(nombre2);
+
+        // addition de valeurs (string)
+        var fruits = 'pommes';
+        console.info(fruits);
+
+        fruits += 'fraises';
+        console.info(fruits);
+        fruits += 'mangues';
+        console.info(fruits); 
+
+        //Addition d'une valeur numérique (number)
+        var noteEval = 12;
+        console.info(noteEval);
+
+        noteEval += 2;
+        console.info(noteEval);
+
+        //Titre 2
+        document.write('<h2 style="background: orange;width: 75%;color: #fff;">2- Type de données</h2>');
+
+        var monTexte = 'Voici une phrase pour Audrey, avec l\'apostrophe';
+        console.info(typeof(monTexte));
+
+        document.write(typeof(noteEval) + '<br>');
+        document.write(typeof(monTexte) + '<br>');
+
+        //Titre 3
+        document.write('<h2 style="background: orange;width: 75%;color: #fff;">3- constantes</h2>');
+
+        const BOUGE_PAS = "Ma constante impossible à modifier !";
+
+        document.write('<p style="background: white;">' + BOUGE_PAS + '</p>');
+
+        //Titre 4
+        document.write('<h2 style="background: orange;width: 75%;color: #fff;" title="Le mot qui plait à Audrey !">4- Concaténer</h2>');
+
+        let prenom = 'bruce', nom = 'Willis';
+        document.write(prenom + ' ' + nom);
+
+        //titre 5 
+        document.write('<h2 style="background: orange;width: 75%;color: #fff;" title="Le mot qui plait à Audrey !">5- Concaténer</h2>');
+
+        //addition 
+        let addition = 10 + 15;
+        document.write('<p>Une addition : ' + addition + '</p>');
+        //multiplication
+        let multiplication = 10 * 15;
+        document.write('<p>Une multiplication : ' + multiplication + '</p>');
+        //soustraction 
+        var soustraction = 10 - 5;
+        document.write('<p> Une soustractin : ' + soustraction + '</p>');
+        //division 
+        var division = 10 / 5;
+        document.write('<p> Une division : ' + division + '</p>');
+        console.log(addition, multiplication, soustraction, division);
+
+        //modulo
+        //Je partage 10 billes entre trois personnes il n'en reste combien?
+        
+        var modulo = 10 % 3;
+        console.log(modulo);
+
+        //EXO 
+        document.write('<h3> Un petit exercice dans un prompt() et une alerte.</h3>');
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
