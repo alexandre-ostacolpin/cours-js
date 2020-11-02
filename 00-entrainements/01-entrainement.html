@@ -169,9 +169,45 @@
             document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ' : a n\'est pas égal à b</p>');
         }
 
+        //tester si la condition est remplie : a et b sont-ils egaux en type de contenu et en valeur ?
+
+        if (a === b){// égal en valeur et en type
+            document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ' a et b sont égaux et sont tous les deux de même type </p>');
+        }else{
+            document.write('<p>Pour a qui vaut ' + a + ' et b qui vaut ' + b + ' a est différent de b en type et/ou en valeur. </p>');
+        }
+
+        //EXO: tester a par rapport à 5 ; inférieur ? égal ? supérieur ? ou alors c'est pas un nombre, dans une condition multiple
+
+        if ( a < 5){
+            document.write('A contient une valeur inférieur à 5');
+        }else if (a > 5){
+            document.write('A contient une valeur supérieur à 5');
+        }else if(a == 5){
+            document.write('A contient une valeur égal à 5');
+        }else{
+            document.write('A n\'est sans doute pas un nombre');
+        }
+
+        //exo a est-il supérieur à b et b est-il supérieur à c
+
+        if ( a > b && b > c){
+            document.write('<p>Pour qui vaut ' + a + ', b qui vaut ' + b + ' et c qui vaut ' + c + ' a est supérieur à b et b est supérieur à c</p>');
+        }else{
+            document.write('<p>Ici on test si a (' + a + ')est sup. à b (' + b + ') et si b est sup. à c (' + c + '); mais dans ce cas au moin une des deux condition n\'est pas remplie</p>');
+        }
+
+        //exo : a supérieur à b ou b supérieur à c
+
+        if ( a > b || b > c) {
+            document.write('<p>a n\'est pas supérieur à b</p>');
+        }else{
+            document.write('<p>Sinon c\'est faux</p>');
+        }
+
+        //exo
     </script>
 </head>
 <body>
-    
 </body>
 </html>

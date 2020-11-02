@@ -34,7 +34,7 @@ h1 {
 
 /* tableau */
 table {
-    width: 500px;
+    width: 700px;
     border-collapse: collapse;
     margin: auto;
 }
@@ -48,7 +48,8 @@ thead {
 }
 
 caption {
-    width: 495px;
+    width: 696px;
+    height: 30PX;
     border-collapse: collapse;
     margin: auto;
     border: 3px solid lightblue;

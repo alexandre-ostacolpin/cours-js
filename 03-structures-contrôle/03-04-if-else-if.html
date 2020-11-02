@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - III 04 IF else if</title>
+    <!-- mes styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- script js en externe: C'est la méthode recommendée, on indique la source, le fichier -->
+    <script src="ifelseif.js" async></script>
+
+</head>
+<body>
+    <h1>JS - III 04 IF else if</h1><br>
+    <div id="wrapper">
+        <h2>1- if...else...if...else JS</h2>
+        <p>La condition if... else if... else (si... sinon si... sinon) est une structure conditionelle encore plus complète puisqu'elle permet de générer et de prendre en charge autant de cas que l'on souhaite.</p>
+        <p>Nous allons pouvoir écrire autant de else if que l'on veut dans cette conditions.</p>
+
+        <code>
+            if (x > 1){<br>
+                alert('x contient une valeur strictement supérieur à 1');<br>
+            }else if (x == 1){<br>
+                alert ('x contient la valeur 1');<br>
+            }else{<br>
+                alert('x contient une valeur strictement inférieur à 1');<br>
+            }
+        </code>
+        <p>Des qu'un test va être validé le JS va ignorer les tests suivants ? Il faut donc faire bien attention à l'ordre des else if  lors de l'écriture d'une condition pour obtenir le résultat souhaité.</p>
+        
+    </div><!-- end div wrapper --> 
+</body>
+</html>
