@@ -25,19 +25,19 @@ let testInferieur = x < 4;
 let testSuperieur = x > 4;
 // console.log(testSuperieur);
 
-alert('valeur dans x égale à 4 (en valeur) ? : ' + testEgalValeur +
-    '\n Valeur dans x égale à 4 (en valeur et en type) ? ' + testEgalValeurType +
-    '\n valeur dans x égale à 4 (en valeur) ? ' + testDifferenceValeur +
-    '\n valeur dans x égale à 4 (en valeur OU en type) ? ' + testDifferenceValeurType +
-    '\n valeur dans x égale à 4 (en valeur) ? ' + testInferieur + 
-    '\n valeur dans x égale à 4 (en valeur) ? ' + testSuperieur +
-    ''
-);
+// alert('valeur dans x égale à 4 (en valeur) ? : ' + testEgalValeur +
+//     '\n Valeur dans x égale à 4 (en valeur et en type) ? ' + testEgalValeurType +
+//     '\n valeur dans x égale à 4 (en valeur) ? ' + testDifferenceValeur +
+//     '\n valeur dans x égale à 4 (en valeur OU en type) ? ' + testDifferenceValeurType +
+//     '\n valeur dans x égale à 4 (en valeur) ? ' + testInferieur + 
+//     '\n valeur dans x égale à 4 (en valeur) ? ' + testSuperieur +
+//     ''
+// );
 
-alert(`valeur dans x égale à 4 (en valeur) ? : ${testEgalValeur}
- Valeur dans x égale à 4 (en valeur et en type) ? ${testEgalValeurType}
- valeur dans x égale à 4 (en valeur) ? ${testDifferenceValeur}
- valeur dans x égale à 4 (en valeur OU en type) ? ${testDifferenceValeurType}
- valeur dans x égale à 4 (en valeur) ? ${testInferieur}
- valeur dans x égale à 4 (en valeur) ? ${testSuperieur}`
-);
+// alert(`valeur dans x égale à 4 (en valeur) ? : ${testEgalValeur}
+//  Valeur dans x égale à 4 (en valeur et en type) ? ${testEgalValeurType}
+//  valeur dans x égale à 4 (en valeur) ? ${testDifferenceValeur}
+//  valeur dans x égale à 4 (en valeur OU en type) ? ${testDifferenceValeurType}
+//  valeur dans x égale à 4 (en valeur) ? ${testInferieur}
+//  valeur dans x égale à 4 (en valeur) ? ${testSuperieur}`
+// );
