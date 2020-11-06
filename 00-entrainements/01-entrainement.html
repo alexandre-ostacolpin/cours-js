@@ -270,12 +270,51 @@
                 document.write('<p>Vous avez choisi le vert</p>');
                 break;
             default: 
-            default: 
                 document.write('<p>Ha ! Tiens, vous n\'aimez ni le bleu, ni le rouge, ni le vert ! Vous aimez le ' + votreCouleur + '.</p>');
         }
 
         //boucle 
         document.write('<h2 style="background: orange;width: 75%;color: #fff;">7- Boucles</h2>');
+
+        // EXO boucle while tant que la var. w1 = 0 est inférieur ou égal à 15 écrivez "w1 = x puis w1 = x+1 etc..."
+
+        var w1 = 0;//Variable initialisé à 0
+        while ( w1 <= 15 ){//tant que le test est vrai
+            document.write('<p>w1 égal à ' + w1 + ' </p>' );//block de code à exécuter 
+            w1++;//incrémentation
+        }//Fin de la while loop
+
+        //EXO FOR  var for1 = 0  et qui est for 1 <= 10
+
+        for (var for1 = 0; for1 <= 10; for1++){
+            document.write('for1 est égal à ' + for1 + ' à chaque passage de la boucle ' + (for1 + 1) + ' <br> ');
+        }
+
+        document.write('<hr>');
+
+        // EXO Une boucle for2 = 0 for2 <=10 et on écrit "la variable for2 contient x à chaque passage de la boucle."
+        //2- avec if else rajoutez à la fin de la boucle "et la boucle se termine là."
+
+
+        
+
+        // for (var for2 = 0; for2 <= 10; for2++){
+        //     if(for2 == 10){
+        //         document.write('la variable "for2" contient ' + for2 + ' et la boucle se termine là');
+        //     }else{
+        //         document.write(' la variable "for2" contient ' + for2 + ' à chaque passage de la boucle ' + ( for2 + 1 ) + ' <br>'); 
+        //     } 
+        // }//fin de la boucle
+
+        for (for2 = 0; for2 <= 10; for2++){
+            if(for2 < 10){
+                document.write('<p>La variable for2 contient ' + for2 + ', incrémenté à chaque passage de la boucle : ' + for2 + ' + 1 = '+ (for2 + 1) +'.</p>');
+            }else{
+                document.write('<p>La variable for2 contient ' + for2 + ', la boucle s\'arrête ici.</p>');
+            } // fin de if else
+        } // fin de for
+
+        document.write('<hr>');
             
 
     </script>
