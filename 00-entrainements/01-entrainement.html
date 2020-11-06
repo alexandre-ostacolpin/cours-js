@@ -12,8 +12,19 @@
     </style>
     <!-- script dans l'en-tête  -->
     <script>
-        document.write('<h1>01 Entrainement JS</h1>');
+        /*
+        PAGE ENTRAINEMENT
+        1- AFFICHAGE
+        2- TYPE DE DONNEES
+        3- CONSTANTES
+        4- CONCATENER
+        5- OPERATEURS NUMERIQUE
+        6- CONDITION
+        7- Boucles
+        */
 
+        document.write('<h1>01 Entrainement JS</h1>');
+        //AFFICHAGE
         document.write('<h2 style="background: orange;width: 75%;color: #fff;">1- Affichage</h2>');
 
         var maBoite;
@@ -76,7 +87,7 @@
         noteEval += 2;
         console.info(noteEval);
 
-        //Titre 2
+        //TYPE DE DONNEES
         document.write('<h2 style="background: orange;width: 75%;color: #fff;">2- Type de données</h2>');
 
         var monTexte = 'Voici une phrase pour Audrey, avec l\'apostrophe';
@@ -85,20 +96,20 @@
         document.write(typeof(noteEval) + '<br>');
         document.write(typeof(monTexte) + '<br>');
 
-        //Titre 3
+        //CONSTANTES
         document.write('<h2 style="background: orange;width: 75%;color: #fff;">3- constantes</h2>');
 
         const BOUGE_PAS = "Ma constante impossible à modifier !";
 
         document.write('<p style="background: white;">' + BOUGE_PAS + '</p>');
 
-        //Titre 4
+        //CONCATENER
         document.write('<h2 style="background: orange;width: 75%;color: #fff;" title="Le mot qui plait à Audrey !">4- Concaténer</h2>');
 
         let prenom = 'bruce', nom = 'Willis';
         document.write(prenom + ' ' + nom);
 
-        //titre 5 
+        //OPERATEURS NUMERIQUE 
         document.write('<h2 style="background: orange;width: 75%;color: #fff;" title="Le mot qui plait à Audrey !">5- Concaténer</h2>');
 
         //addition 
@@ -148,6 +159,7 @@
         alert('Vous avez saisi le chiffre : ' + votreChiffre + 'ce chiffre au carré est égal à ' + auCarre + '.');//4- J'affiche dans deux alert() les résultats des opérations.
         alert('Vous avez saisi le chiffre : ' + votreChiffre + 'ce chiffre au cube est égal à ' + auCube + '.');
 
+        //6- CONDITION
         document.write('<h3 style="background: orange;width: 75%;color: #fff;">6- Les conditions</h3>')
 
         let a = 2, b = 5, c = 2;
@@ -205,7 +217,67 @@
             document.write('<p>Sinon c\'est faux</p>');
         }
 
-        //exo
+        //exo isNan ... is not a number
+        //faire le typeof des var ci-dessus dans une console.info
+        var chiffre1 = 50, chiffre2 = '100', chiffre3 = 'vingt';
+
+        console.info(typeof chiffre1, typeof chiffre2, typeof chiffre3);
+
+        if (isNaN(chiffre3) ){//1- Si la variable testé n'est pas un nombre (dans le cas de chiffre2 qui est un string le code ne sera pas exécuter)
+            document.write('<p>Voyons voir chiffre 3 qui vaut ' + chiffre3 + ' ce n\'est pas un nombre ! </p>');//2- On exécute ce bloc de code 
+        }
+
+        //Inversons la condition is not a number isNaN avec le symbole
+
+        //Si chiffre1 est un nombre (est-ce bien un nombre ? = !isNaN)
+        if ( !isNaN(chiffre3)){// est-ce bien un nombre ?
+            document.write('<p>Voyons' + chiffre3 + ' est bien un nombre</p>');
+        }else{//Sinon exécute celui-ci
+            document.write('<p>Au contraire : ' + chiffre3 + 'n\'est pas un nombre</p>');
+        }
+
+        //exo 1- récupérer dans une variable la réponse à la question suivante ; "Parmi ces couleurs, le vert, le bleu, le rouge, le orange, quelle est votre couleur préférée ?"
+
+        let votreCouleur = prompt ('Parmi ces couleurs, le vert, le bleu, le rouge, le orange, quelle est votre couleur préférée ?');
+        // console.log(votreCouleur);
+        // document.write('<p>Vous avez préféré la couleur ' + votreCouleur + ' .</p>');
+
+        //2- Ensuite faites une condition pour afficher selon la réponse de votre couleur préféré est le vert ou le bleu ou le orange.
+
+        if(votreCouleur == 'bleu'){
+            document.write('<p>Votre couleur préféré est le bleu.</p>');
+        }else if(votreCouleur == 'vert'){
+            document.write('<p>Votre couleur préféré est le vert.</p>');
+        }else if(votreCouleur == 'rouge'){
+            document.write('<p>Votre couleur préféré est le rouge.</p>');
+        }else if(votreCouleur == 'orange'){
+            document.write('<p>Votre couleur préféré est le orange.</p>');
+        }else{
+            alert('Vous devez rentrer une des couleurs suivantes : vert, rouge, bleu ou orange !');
+            let votreCouleur = prompt('Parmi ces couleurs : le vert, le bleu, le rouge et le orange, quelle est votre couleur préférée ?');
+        }
+        console.info(votreCouleur);
+
+        //exo suite 3 la même chose en switch 
+        switch(votreCouleur){
+            case 'bleu':
+                document.write('<p>Vous avez choisi le bleu</p>');
+                break;
+            case 'rouge':  
+                document.write('<p>Vous avez choisi le rouge</p>');
+                break;
+            case 'vert': 
+                document.write('<p>Vous avez choisi le vert</p>');
+                break;
+            default: 
+            default: 
+                document.write('<p>Ha ! Tiens, vous n\'aimez ni le bleu, ni le rouge, ni le vert ! Vous aimez le ' + votreCouleur + '.</p>');
+        }
+
+        //boucle 
+        document.write('<h2 style="background: orange;width: 75%;color: #fff;">7- Boucles</h2>');
+            
+
     </script>
 </head>
 <body>
