@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>01 Entrainement</title>
+    <link rel="stylesheet" href="../css/style.css">
     <!-- styles pour cette page  -->
     <style>
         body {
@@ -21,6 +22,7 @@
         5- OPERATEURS NUMERIQUE
         6- CONDITION
         7- Boucles
+        8- Fonctions
         */
 
         document.write('<h1>01 Entrainement JS</h1>');
@@ -315,7 +317,87 @@
         } // fin de for
 
         document.write('<hr>');
-            
+
+        //8- Fonctions Predefinies et utilisateur
+
+        document.write('<h2 style="background: orange;width: 75%;color: #fff;">8- Les Fonctions</h2>');
+
+        var phrase1 = 'vive l\'été !';
+        var phrase2 = 'JE MANGE TROP DE GATEAUX A L\'AGENCE';
+
+        //toUpperCase()
+        console.log(phrase1.toUpperCase());
+        document.write(phrase1.toUpperCase());
+
+        document.write(' <br> ' + phrase2.toLowerCase());
+
+        //length compte le nombre de caractères dans une chaîne
+        var phrase3 = 'My name is Bond, James Bond.';
+        console.log(phrase3.length);
+
+        document.write(' <br> ' + ' test dans la phrase suivante <span class="stabilo"> ' + phrase3 + ' </span> il y a ' + phrase3.length + ' caractères.');
+
+        document.write('<hr>');
+        //création d'une fonction
+
+        function maFonction(){
+            return document.write('<p class="stabilo">Il fait beaux !</p>');
+        }
+
+        maFonction();//Ici on apelle la fonction
+
+        // function uneAlerte(){
+        //     return alert('coucou les amis');
+        // }
+
+        // uneAlerte();
+
+        function direBonjour(prenom){
+            var message = document.write('<p> Bonjour ' + prenom + '. Comment vas-tu ?</p> ');
+            return message;
+        }
+        direBonjour('Alexandre');
+
+        var prenom2 = prompt('Quel est ton prénom ?');//On passe en variable le résultat du prompt()
+        
+        function faireCouCou(prenom2){//Une fonction qui demande un argument
+            var coucou = document.write('<p> Coucou ' + prenom2 + '. Comment vas-tu ?</p> ');
+            return coucou;//Envoie la variable
+        }
+        faireCouCou(prenom2);//Apelle de fonction avec l'argument
+
+        // EXO > demandez 'Quelle est la saison ? ' et "Quelle est la température ? " et faites une fonction meteo() qui renvoit les réponse à ces questions.
+
+
+        var saison1 = prompt('Quelle est la saison ?');
+        var temperature1 = prompt('Quelle est la température ?');
+
+        function meteo(saison1, temperature1){
+                if(saison1 == 'printemps'){// si la variable contient bien 'printemps'
+                    var saison = document.write('<p>Nous sommes au ' + saison1 + ' et il fait ' + temperature1 + '</p>');// exécute ce bloc de code
+
+                }else{//sinon (c'est faux il n'y a pas printemps)
+                    var saison = document.write('<p>Nous sommes en ' + saison1 + ' et il fait ' + temperature1 + '</p>');//exécute cet autre bloc 
+                }//Fin if else
+            return saison;
+        }
+        meteo(saison1, temperature1);
+
+        function meteoIf2 (saison1, temperature1) {
+            var article;
+            if (saison1 == 'printemps'){
+                article = 'au';
+            }else{
+                article = 'en';
+            }//Fin de if else
+            return document.write('Nous sommes ' + article + saison1 + ' et la température est de ' + temperature1 + ' .');
+        }// Fin fonction meteoIf2
+        meteoIf2(saison1, temperature1);
+        
+
+
+        
+           
 
     </script>
 </head>
