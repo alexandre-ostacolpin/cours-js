@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - IV 02 Portée des variables</title>
+    <!-- Mes style  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- script en externe -->
+    <!-- async permet de déferer le chargement de la page, c'est a dire qu'il va d'abord charger le html pour ensuite lancer la page du JS ce qui permet de trouver les id dans une page. -->
+    <script src="portee.js" async></script>
+</head>
+<body>
+    <h1>JS - IV 02 Portée des variables</h1><br>
+    <div id="wrapper">
+        <p>En JS, il existe deux espaces de portée différentes: l'espace global et l'espace local.</p>
+        <ul>
+            <li>L'espace global désigne l'intièreté d'un script, à l'exception de l'intérieur des fonctions.</li>
+            <li>L'espace loal désigne, à l'inverse, l'espace dans une fonction</li>
+        </ul>
+        <h3>Exemple :</h3>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        
+    </div><!-- Fin wrapper --> 
+</body>
+</html>

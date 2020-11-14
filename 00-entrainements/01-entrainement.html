@@ -23,6 +23,7 @@
         6- CONDITION
         7- Boucles
         8- Fonctions
+        9- Supplement
         */
 
         document.write('<h1>01 Entrainement JS</h1>');
@@ -478,6 +479,30 @@
             return ecole;
         }//fin function
         quelleEcole (sonAge);//appel de fonction
+
+        //9- SUPPLEMENT
+        document.write('<h2 style="background: orange;width: 75%;color: #fff;">9- Suppléments</h2>');
+
+        //parseInt
+        // parseInt permet de transformer un string en number, changer le type de la variable
+
+        var chiffreNew = '100';// Une string
+
+        console.log(typeof(chiffreNew));// Confirmation que nous avons une string 
+        var parse = parseInt(chiffreNew);//Pour changer le type de la variable chiffreNew on la passe dans une nouvelle variable dans laquelle on utilise la fonction parseInt()
+
+        console.log(typeof parse);// cette nouvelle variable est de type number
+
+        var chiffreNew2 = 50;
+        console.log(parse + chiffreNew2);//ici on additionne
+
+        var chiffreNew3 = 182.2635;
+        console.log(parseInt(chiffreNew3));
+
+        //parseFloat() transforme une string en number avec la virgule
+        var chiffreNew4 = '10.23689';
+        console.log(parseFloat(chiffreNew4));
+        
     </script>
 </head>
 <body>
