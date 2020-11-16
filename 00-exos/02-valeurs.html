@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02- valeurs</title>
+    <style>
+        body{
+            background-color: mediumorchid;
+        }
+
+        #wrapper {
+            width: 80%;
+            border-radius: 10px;
+            margin: auto;
+            background-color: white ;
+        }
+
+        h1{
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            border-radius: 10px;
+            background-color: lightblue;
+        }
+
+        table {
+            width: 500px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 3px solid lightblue;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Valeurs</h1>
+        <p>Observez le code ci-dessous et tentez de prévoir les valeurs finales de chaque variable à la fin de chaque ligne(par exemple après la ligne 'var a = 2;'si je fait un console.log de a j'aurai 2 comme résultat. <a href="img/02-valeurs.png">cf.capture d'écran</a></p>
+        <hr>
+        <p>L'idée est de faire les calculs vous-mêmes, sur une feuille par axemple AVANT de regarder dans le console !</p>
+
+        <table>
+            <tr>
+                <th>var a = 2;</th>
+                <th>Exemple = 2</th>
+            </tr>
+            <tr>    
+                <th>a = a -1;</th>
+                <th>Exenple (2-1) = 1</th>
+            </tr>    
+                <th>a ++;</th>
+                <th>Exenple (1+1) = 2</th>
+            <tr>
+                <th>var b = 8;</th>
+                <th>Exenple = 8</th>
+            </tr>
+            <tr>
+                <th>b += 2;</th>
+                <th>Exenple (8+2)= 10</th>
+            </tr>
+            <tr>
+                <th>var c = a + b * b;</th>
+                <th>Exemple (10x10+2) = 102</th>
+            </tr>
+            <tr>
+                <th>var d = a * b + b;</th>
+                <th>Exemple (2x10=20+10) = 30</th>
+            </tr>
+            <tr>
+                <th>var e= a * (b + b);</th>
+                <th>Exemple (10+10=20x2) = 40</th>
+            </tr>
+            <tr>
+                <th>var f = a * b / a;</th>
+                <th>Exemple (10/2=5x2) = 10</th>
+            </tr>
+            <tr>
+                <th>var g = b / a * a;</th>
+                <th>Exemple (10/2=2 * 2) = 10</th>
+            </tr>
+        </table>
+    </div>
+    <script src="02-valeurs.js"></script>
+</body>
+</html>
