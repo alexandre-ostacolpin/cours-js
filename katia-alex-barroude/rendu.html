@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Compléter la ligne 6 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Colombbus - Reco</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
+
+        .contexte, .swot, .diagnostic, .problematique, .cibles, .objectifs, .parti-pris {
+            margin-bottom: 50px;
+        }
+
+        .objectifs li {
+            padding-bottom: 10px;
+        }
+
+        /* style de la sidebar  */
+
+        .sidenav {
+        height: auto; /* Full-height: remove this if you want "auto" height */
+        width: 200px; /* Set the width of the sidebar */
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1; /* Stay on top */
+        top: 270px; /* Stay at the top */
+        right: 30px;
+        border-left: 1px solid rgb(139, 139, 139);
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 20px;
+        }
+
+        .sidenav li {
+            list-style-type: none;
+            padding-bottom: 10px;
+        }
+
+        .sidenav a {
+            color: black;
+        }
+
+        .sidenav a:hover {
+            color : rgb(93, 190, 205);
+            text-decoration-line: none;
+        }
+
+        /* style du footer */
+
+        .footer {
+        /* position: absolute;
+        bottom: 0; */
+        width: 100%;
+        height: 60px; /* Set the fixed height of the footer here */
+        line-height: 60px; /* Vertically center the text there */
+        background-color: #f5f5f5;
+        text-align: center;
+        margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <section class="jumbotron bg-light">
+        <h1 class="display-4 text-info">Recommandation stratégique</h1>
+        <p class="lead">Colombbus - 2020</p>
+    </section> <!-- fin en-tête jumbotron -->
+
+    <nav class="sidenav d-none d-xl-block col-xl-2 bd-toc" aria-label="Secondary navigation">
+        <ul class="section-nav">
+            <li class="toc-entry toc-h2"><a href="#contexte">Contexte</a></li>
+            <li class="toc-entry toc-h2"><a href="#swot">SWOT</a></li>
+            <li class="toc-entry toc-h2"><a href="#diagnostic">Diagnostic rédigé</a></li>
+            <li class="toc-entry toc-h2"><a href="#problematique">Problématique</a></li>
+            <li class="toc-entry toc-h2"><a href="#cibles">Cibles</a></li>
+            <li class="toc-entry toc-h2"><a href="#objectifs">Objectifs</a>
+            <li class="toc-entry toc-h2"><a href="#parti-pris">Parti pris</a>
+        </ul>
+    </nav> <!-- fin de la sidebar -->
+
+    <div class="px-4 contexte">
+        <h2 class="display-4" id="contexte">Contexte</h2>
+        <div class="container w-50">
+           <p>Colombbus est une association française de loi 1901 fondée en 2000 qui, en facilitant l’usage et l’appropriation des outils numériques, agit en faveur de l’éducation, l’insertion sociale, la formation et l’insertion professionnelle des populations défavorisées.</p>
+
+           <p>Elle est composée de trois pôles :</p>
+
+           <ul>
+               <li class="my-4">
+                <p class="font-weight-bold">Pôle Education - Declick :</p>
+                <p>Depuis plus de 10 ans, le dispositif d’enseignement Declick donne la possibilité à des jeunes enfants âgés de 8 à 15 ans et issus de zones d’éducation prioritaires de s’initier au code et aux outils numériques.</p>
+                
+                <p>Des ateliers ludiques à la programmation écrite, en passant par des projets individuels ou en groupe : la plateforme Declick permet à chaque utilisateur de développer des compétences indispensables qui faciliteront leur intégration professionnelle et sociale.  </p>
+
+                <p>En 2019, 2000 élèves dans la France entière ont bénéficié de la plateforme Declick.</p>
+               </li>
+               <li class="my-4">
+                <p class="font-weight-bold">Pôle Insertion - 10mentionWeb :</p>
+                <p>Le pôle insertion a pour but l’insertion de demandeurs d’emploi en difficulté dans le secteur du numérique. Pour ce faire, Colombbus a créé 10mentionWeb (agence qui agit pour l’inclusion sociale et professionnelle grâce au numérique depuis 18 ans) par l’intermédiaire de laquelle les demandeurs d’emplois sont embauchés en CDD. 
+                <br>
+                <p>Des chantiers d’insertion 10mentionWeb sont mis en place pour mener à bien ce dispositif. Il permet à des personnes éloignées de l’emploi d'être formés aux métiers du web dans des conditions de travail réelles puisque 10mentionWeb est une agence solidaire. En plus de développer des compétences techniques, les salariés bénéficient d'un accompagnement personnalisé pour faciliter leur retour à l'emploi. Les chantiers sont certifiants (CNCP techniques d’intégration et développement web en partenariat avec Webforce3) de manière à accroître les chances de sorties positives avec un niveau reconnu par les entreprises du secteur numérique. Aujourd’hui, 4 chantiers sont en cours à Paris, Evry et Suresnes.</p>
+        
+                <p>Depuis 2014, 104 salariés insertion ont été embauchés. En revanche, en 2019, si le taux d'obtention de la certification est très satisfaisant (80%), le taux de retour à l'emploi est, quant à lui, très décevant puisque le taux de sortie positive (c'est à dire le taux de retour à l'emploi/formation 6 mois après le chantier) n'est que de 14%. </p>
+               </li>
+               <li class="my-4">
+                <p class="font-weight-bold">Pôle Lien social - Remobilisation</p>
+                <p>Passage Numérique :</p> 
+                <p>Le Passage Numérique est un lieu de rencontre et de partage animé par Colombbus. 
+                Créé en 2013 et situé à Paris, cet espace de vie participatif permet aux parisiens de tout âge de d’assister à des ateliers interactifs, afin de renforcer leurs compétences numériques.  
+                Les habitants sont, en effet, accueillis chaque semaine dans le cadre du "mercredi numérique" afin d'être accompagnés selon leurs besoins et envie dans l'utilisation d'outils indispensables au quotidien tels que les boîtes mail ou les réseaux sociaux par exemple.
+                Au cœur de ce dispositif, les habitants proposent des nouveaux ateliers et participent à des projets innovants ; l’occasion de favoriser le dialogue, le lien social, l’intergénérationnel et la mixité.</p> 
+                <p>Numerik'Up :</p>
+                <p>Parallèlement, Colombbus propose le Parkour Numérik'up, une formation de 5 semaines destinées aux jeunes de 16 à 25 ans peu ou pas diplômés. Toujours sur la thématique du numérique, ce parcours permet aux jeunes adultes isolés de s'insérer socialement et professionnellement grâce à un programme transversal allant du graphisme à la création d'un site vitrine, en passant par l'administration réseau.</p>
+                <p>En 2019, 7 parcours Numerik'Up on été mis en place ainsi que 31 séances de "Mercredi numérique".</p>
+               </li>
+           </ul>
+
+           <p>Soutenue par de nombreux partenaires, tant publiques que privés, et financée à 70% par des subventions publiques, Colombbus a permis à de nombreuses personnes de tout âge et en difficulté de bénéficier gratuitement d’une formation et d’ateliers dans le numérique.</p>
+       </div>  <!-- fin container contexte -->
+    </div> <!-- fin de la partie contexte -->
+
+    <div class="p-4 swot bg-light"> <!-- SWOT -->
+        <h2 class="display-4" id="swot">SWOT</h2>
+        <div class="container w-50">
+            <table class="table">
+                <thead>
+                  <tr class="bg-info text-white text-center">
+                    <th scope="col"></th>
+                    <th scope="col">Forces/Faiblesses</th>
+                    <th scope="col">Opportunités/Menaces</th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white">
+                  <tr>
+                    <th scope="row">Marché</th>
+                    <td>
+                        <ul>
+                            <li>test</li>
+                            <li>test</li>
+                            <li>test</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th  scope="row">Annonceur</th>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Concurrents</th>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Distribution</th>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Prix</th>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Production / service</th>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">communication</th>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cible</th>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div> <!-- fin container swot -->
+    </div> <!-- fin SWOT -->
+
+    <div class="px-4 diagnostic"> <!-- Diagnostic -->
+        <h2 class="display-4" id="diagnostic">Diagnostic</h2>
+        <div class="container w-50">
+            
+
+        </div> <!-- fin container diagnostic -->
+    </div> <!-- fin diagnostic -->
+
+    <div class="p-4 problematique bg-light"> <!-- Problématique -->
+        <h2 class="display-4" id="problematique">Problématique</h2>
+        <div class="container w-50">
+            <p>Comment, dans un <span class="font-weight-bold">contexte économique difficile</span> lié à la crise sanitaire et face à <span class="font-weight-bold">l'explosion des formations dans le domaine du numérique</span>, Colombbus peut réaffirmer sa crédibilité, faire reconnaitre la qualités de ses chantiers / formations auprès des entreprises et ainsi <span class="font-weight-bold">améliorer son taux de sortie positive</span> ?</p>
+        </div> <!-- fin container Problématique -->
+    </div> <!-- fin Problématique -->
+
+    <div class="px-4 cibles"> <!-- Cibles -->
+        <h2 class="display-4" id="cibles">Cibles</h2>
+        <div class="container w-50">
+            <table class="table">
+                <thead>
+                  <tr class="bg-info text-white">
+                    <th scope="col"></th>
+                    <th scope="col" class="text-center">Cibles</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="bg-light" scope="row">Cible principale</th>
+                    <td>
+                        <ul>
+                            <li>Hommes/Femmes 18 ans et +</li>
+                            <li>Parents d'enfants entre 8 et 15 ans</li>
+                            <li>France entière</li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light" scope="row">Coeur de cible</th>
+                    <td>
+                        <ul>
+                            <li>Demandeurs d'emploi</li>
+                            <li>Jeunes sans qualification - 16 à 25 ans</li>
+                            <li>CSP -</li>
+                            <li>Habitants d'Ile-de-France</li>
+                            <li>Zones d'éducation prioritaire</li>
+                        </ul>
+                        <ul>
+                            <li style="list-style-type: none;"><span class="font-weight-bold">Motivations</span><br>
+                                <ul>
+                                    <li>S'orienter vers un secteur d'avenir, qui recrute</li>
+                                    <li>Salaires attractifs dans les métiers du web</li>
+                                    <li>Rétablir un lien social</li>
+                                </ul>
+                            </li><br>
+                            <li style="list-style-type: none;"><span class="font-weight-bold">Freins</span><br>
+                                <ul>
+                                    <li>Manque de confiance en soi / Syndrome de l'imposteur</li>
+                                    <li>Complexité / technicité de la formation</li>
+                                    <li>Coût des formations</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light" scope="row">Cible secondaire</th>
+                    <td>
+                        <ul>
+                            <li>Les enfants entre 8 et 15 ans (Declick) - prescripteurs</li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light" scope="row">Cibles internes</th>
+                    <td>
+                        <ul>
+                            <li>Salariés permanents / formateurs</li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="bg-light" scope="row">Cibles relais</th>
+                    <td>
+                        <ul>
+                            <li>Apprenants - Tout ceux ayant bénéficié des dispositifs mis en place par Colombbus</li>
+                            <li>Partenaires
+                                <ul>
+                                    <li>Collectivités locales</li>
+                                    <li>Service publiques (écoles, CAF)</li>
+                                    <li>Pôle emploi</li>
+                                    <li>Entreprises privées</li>
+                                </ul>
+                            </li>
+                            <li>Presse</li>
+                            <li>Blogs spécialisés</li>
+                        </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div> <!-- fin container Cibles -->
+    </div> <!-- fin Cibles -->
+
+    <div class="p-4 objectifs bg-light"> <!-- Objectifs -->
+        <h2 class="display-4" id="objectifs">Objectifs</h2>
+        <div class="container w-50">
+            <table class="table">
+                <thead>
+                  <tr class="bg-info text-white">
+                    <th scope="col"></th>
+                    <th scope="col" class="text-center">Cognitifs</th>
+                    <th scope="col" class="text-center">Affectifs</th>
+                    <th scope="col" class="text-center">Conatifs</th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white">
+                  <tr>
+                    <th scope="row">Cible principale</th>
+                    <td>
+                        <ul>
+                            <li>Mettre l'accent sur l'ancienneté de Colombbus ; vecteur d'expertise et de rigueur</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Sensibiliser les parents sur la possibilité pour leur enfants de se servir des écrans autrement : autour de projets éducatifs et indispensables pour construire leur avenir. Dédiaboliser internet</li>
+                            <li>Sensibiliser les seniors sur le caractère transgénérationnel du Passage Numérique, sur les échanges et la convivialité du lieu ; vecteur de lien social</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Faire intégrer l'utilisation des outils numériques dans le quotidien</li>
+                            <li>Faire que le Passage Numérique soit ancré dans le quotidien de ses usagers, intégré dans le planning de chacun </li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Coeur de cible</th>
+                    <td>
+                        <ul>
+                            <li>Informer sur le marché du travail et les possibilités d'embauche après une formation chez Colombbus</li>
+                            <li>Informer sur la gratuité des formations</li>
+                            <li>Informer sur le suivi personnalisé des apprenants et de l'accompagnement au retour à l'emploi, souvent source d'angoisse pour des chômeurs de longue durée</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Réactiver la confiance en leur capacités</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Faire intégrer les outils numériques dans le quotidien</li>
+                            <li>Faire naitre une curiosité et une volonté de développer ses compétences et de dépassement de soi</li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cible secondaire</th>
+                    <td>
+                        <ul>
+                            <li>Informer les jeunes enfants sur les métiers du web et sur la plateforme Declick</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Développer l'idée selon laquelle les enfants issus des ZEP ont droit aux mêmes chances que les autres</li>
+                            <li>Associer les outils numériques à la créativité</li>
+                            <li>Donner confiance</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Faire que les enfants soient une influence auprès de leurs parents</li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cibles internes</th>
+                    <td>
+                        <ul>
+                            <li>Faire connaître, informer les acteurs du métier des différentes actions menées pour que chacun puisse s'imprégner des éléments de langage.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Développer une culture d'entreprise pour souder ses acteurs internes, les réunir autour d'un projet commun.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Mobiliser les acteurs du métier lors d'événements tels que des salons pour valoriser les services proposés par Colombbus.</li>
+                        </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cibles relais</th>
+                    <td>
+                        <ul>
+                            <li>Faire connaître Colombbus auprès des cibles relais
+                                <ul>
+                                    <li>Affirmer le caractère indispensable de Colombbus, surtout dans le contexte actuel, puisque l'association cible en priorité les demandeurs d'emploi et prépare ses apprenants à des métiers d'avenir</li>
+                                    <li>Informer sur la dimension inclusive de Colombbus : ouvert à des personnes de tout âge, sans prérequis</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Adopter une stratégie axée sur les résultats auprès des partenaires : informer des bienfaits de leur soutien, mettre l'accent sur l'humain et ainsi leur donner un sentiment de "devoir accompli"</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Attirer les journalistes lors d'événements</li>
+                            <li>Faire des apprenants et partenaires des porte paroles positifs et convaincus de l'efficacité des dispositifs Colombbus</li>
+                        </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div> <!-- fin container objectifs -->
+    </div> <!-- fin objectifs -->
+
+    <div class="px-4 parti-pris"> <!-- Parti-pris -->
+        <h2 class="display-4" id="parti-pris">Parti-pris</h2>
+        <div class="container w-50">
+            <p>Clarifier 10mentionWeb, peut être valoriser l'agence sur les cv.</p>
+        </div> <!-- fin container parti-pris -->
+    </div> <!-- fin parti-pris -->
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Alexandre OSTA-COLPIN - Baroude NTSIBA - Katia SEMEDO</span>
+        </div>
+    </footer>
+
+    <!-- et les scripts utiles à Bootstrap JQuery, popper.js et le JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+   
+</body>
+</html>
