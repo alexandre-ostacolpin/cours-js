@@ -37,23 +37,23 @@ console.log(nombreArrondi);
 // }
 
 
-console.log("Bienvenue dans ce jeu de devinette !");
-var solution = Math.floor(Math.random() * 100) + 1; // Je génère un nombre aléatoire entre 1 et 100
-// console.log("(La solution est " + solution + ")");
-for (var i = 0; i <= 6; i++) { // je lance la boucle, où i <= au nombre d'essai voulu
-    var essai = Number(prompt("Entrez un nombre entre 1 et 100 pour deviner le nombre aléatoire."));
-    if (essai === solution) {
-        console.log("Vous avez trouvé, bravo !");
-		console.log("Vous avez trouvé en " + i + " essai(s)")
-        break; // si la réponse est trouvé, la boucle s'arrête et la console l'affiche, en précisant le nombre d'essai nécessaires.
-    } else if ( essai < solution){ // comparent la valeur "essai" à la valeur "solution"
-            console.log(essai + " est trop petit");
-    } else if (essai > solution){
-            console.log(essai + " est trop grand");
-    }else (essai !== solution){
-        console.log("Je t'ai demander un nombre");
-    }
-}
-if (i === 6){
-    console.log("Vous avez perdu ! Le nombre était : " + solution); // si la solution n'est pas trouvée, la console l'affiche en donnant la solution
-}
+// console.log("Bienvenue dans ce jeu de devinette !");
+// var solution = Math.floor(Math.random() * 100) + 1; // Je génère un nombre aléatoire entre 1 et 100
+// // console.log("(La solution est " + solution + ")");
+// for (var i = 0; i <= 6; i++) { // je lance la boucle, où i <= au nombre d'essai voulu
+//     var essai = Number(prompt("Entrez un nombre entre 1 et 100 pour deviner le nombre aléatoire."));
+//     if (essai === solution) {
+//         console.log("Vous avez trouvé, bravo !");
+// 		console.log("Vous avez trouvé en " + i + " essai(s)")
+//         break; // si la réponse est trouvé, la boucle s'arrête et la console l'affiche, en précisant le nombre d'essai nécessaires.
+//     } else if ( essai < solution){ // comparent la valeur "essai" à la valeur "solution"
+//             console.log(essai + " est trop petit");
+//     } else if (essai > solution){
+//             console.log(essai + " est trop grand");
+//     }else (essai !== solution){
+//         console.log("Je t'ai demander un nombre");
+//     }
+// }
+// if (i === 6){
+//     console.log("Vous avez perdu ! Le nombre était : " + solution); // si la solution n'est pas trouvée, la console l'affiche en donnant la solution
+// }
