@@ -19,8 +19,79 @@ console.log(nombreArrondi);
 // console.log(nombreX100);
 
 // suite de l'exo
+    
+// for(var i = 1; i<=6; i++){
+//     var choixUtilisateur = parseInt(prompt('Le jeu est simple, je pense à un nombre entre 0 et 100. A ton avis, quel est ce nombre ? Tu as droit à 6 essais !'));//parseInt nous assure que le nombre est un nombre entier (ex. si on rentre 92.3 il considère 92)
+//         if(!isNaN(choixUtilisateur)){//Nous assure que la saisie est un nombre
+//             if(nombreArrondi === choixUtilisateur){ // le nombre est égal au nombre au hasard
+//                 alert('Bien joué');
+//                 i=6; // la boucle s'arrête
+//             }else{
+//                 if(nombreArrondi < choixUtilisateur){
+//                     alert('Le nombre est plus petit ; essai n°' + i + ' /6');
+//                 }else{
+//                     alert('Le nombre est plus grand ; essai n°' + i + ' /6');
+//                 }
+//             }// fin if plus grand ou plus petit
+//         }else{
+//             alert('Il faut entrer un nombre !!');
+//         }// fin if principal
+//     } // fin for
+//     alert('La bonne réponse était ' + nombreArrondi);
+//     document.getElementById('p1').innerHTML = 'la bonne réponse était ' + nombreArrondi;
 
-// var nombreUtilisateur = prompt('Le jeu est simple : je pense à un nombre entre 0 et 100.A ton avis quel est ce nombre ? Tu a droit à 6 essais ...')
+
+// correction Justine
+
+var nbrHasard = Math.floor(Math.random() * 100);
+console.log(typeof nbrHasard, nbrHasard);
+for(i = 1; i <= 6; i++){
+    var choixUser = parseInt(prompt('Trouvez quel est le nombre mystère, compris entre 0 et 100. Attention, vous n\'avez que 6 essais !'));
+        if ((choixUser < 0) || (choixUser > 100)) { // on teste si en dessous de 0 et au dessus de 100
+            alert('Vous devez saisir un nombre ENTRE 0 et 100 idiot !');
+            i--; // ça ne compte pas dans les essais, en décrémentant i 
+        } else if (isNaN(choixUser)) { // on teste si l'utilisateur met autre chose qu'un chiffre ou un nombre
+            alert('Vous devez saisir un NOMBRE on vous dit !');
+            i--;// ça ne compte pas dans les essais
+        } else if (choixUser < nbrHasard) {
+            alert('Visez plus haut ! Essai ' + i + '/6.');
+        } else if (choixUser > nbrHasard) {
+            alert('Visez plus bas ! Essai  ' + i + '/6.');
+        } else {
+            document.getElementById('p1').innerHTML = 'Vous avez gagné, bravo ! La réponse était bien '+ nbrHasard +'.';
+            break; // on casse la boucle
+        }
+    document.getElementById('p1').innerHTML = 'Dommage, vous n\'avez pas trouvé la bonne réponse, c\'était '+ nbrHasard +'.';
+}//fin boucle principale
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // for (var i = 1; i <= 100; i++) {
 //     if (i === nombreUtilisateur) {
