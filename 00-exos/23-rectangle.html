@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21-saisie.html</title>
+</head>
+<style>
+    body {
+            background-color: rgb(226, 147, 43);
+        }
+
+        #wrapper {
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            height: 900px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            border-radius: 10px;
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            background-color: aqua;
+        }
+</style>
+<body>
+    <div id="wrapper">
+        <h1>Exo 23 - rectangle</h1>
+        <h2>Enoncé</h2>
+        <hr>
+        <p>Construire un programme affichant un rectangle de couleur qui réagit à différentes interactions avec la souris de l'utilisateur.</p>
+        <h2>HTML</h2>
+        <ul>
+            <li>Dans l'en-tête de la page: Ajouter un titre au programe:"gestion de la souris".</li>
+            <li>Crée un bouton (id:#toggle-rectangle)ayant pour intitulé "Cacher / afficher le rectangle".</li>
+            <li>Dans la partie principal de la page:</li>
+            <li>Ajouter des paragraphes de texte expliquant ce que le programme peut faire(lire ci-dessous les interactions).</li>
+            <li>Crée une balise **div** vide(class:.rectangle)pour le rectangle.</li>
+        </ul>
+        <h2>CSS</h2>
+        <ul>
+            <li>Le rectangle est bleu(*royalblue*). de taille 400x300 pixels et possède des coins arrondis.</li>
+            <li>Lorsqu'on applique ta classe *good* en plus au rectangle, il devient vert(*limegreen*).</li>
+            <li>Lorsqu'on applique la classe *important* en plus au rectangle, il devient rouge (*firebrick).</li>
+            <li>Le changement de couleur du rectangle doit s'animer.</li>
+            <li>Ajouter le CSS nécessaire restant pour que le programme fonctionne.</li>
+        </ul>
+        <h2>Interactions</h2>
+        <ul>
+            <li>Quand on clique sur le bouton *toggle-rectangle*, cela cache ou affiche le rectangle.</li>
+            <li>Quand la souris se déplace à l'intérieur du rectangle il devient rouge; il reprend sa couleur original quand la souris n'est plus dedans.</li>
+            <li>Quand on double-clique sur le rectangle il devient vert.</li>
+        </ul>
+        <h2>Remarques</h2>
+        <ul>
+            <li>Organiser le code en trois parties: les variable, les fonctions et enfin le code principal.</li>
+            <li>Nommer correctement les gestionnaires d'évènement pour qu'ils aient un sens.</li>
+        </ul>
+        <button type="button" class="btn btn-outline-primary" id="cacheRectangle">Cacher / Afficher le rectangle</button>
+        <p>Survolez à la souris le rectangle ci-dessous pour qu'il change de couleur !</p>
+        <p>Ou double-cliquez dessus...</p>
+        <div class="rectangle cache">
+
+        </div> 
+    </div>
+    <script src="23-rectangle.js"></script>
+</body>
+</html>
