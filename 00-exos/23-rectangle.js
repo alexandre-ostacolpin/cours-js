@@ -22,5 +22,5 @@ function(){
 
 document.querySelector('.rectangle').addEventListener('dblclick', 
 function(){
-    this.style.background='firebrick';
+    this.style.background='linegreen';
 });
